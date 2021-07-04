@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nomad-Decks</title>
+    <!-- style-this-page -->
+    <link rel="stylesheet" href="../../css/belie-decks.css" />
+    <link
+      rel="icon"
+      href="data:image/jpeg;base64,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"
+    />
+    <!-- material-icons link -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+     <!-- font awsome -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+   />
+  </head>
+  <body id="nomad-decks">
+    <div class="container" id="top">
+      <nav class="">
+        <ul>
+          <li>
+            <a href="../main.html"><p>HADES</p></a>
+          </li>
+          <li>
+            <a href="../image.html"><p>Hình ảnh</p></a>
+          </li>
+          <li>
+            <a href="../film.html"><p>Phim</p></a>
+          </li>
+          <li>
+            <a href="../contact.html"><p>Liên hệ</p></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- main -->
+      <main>
+        <!-- button go to top -->
+        <div class="btn-top">
+          <a href="#top"
+            ><i class="material-icons">
+              keyboard_arrow_up
+            </i></a
+          >
+        </div>
+
+        <aside id="left" class="filter">
+          <!-- Lọc theo màu -->
+
+          <div class="row">
+            <div class="col">
+              <div class="box ">
+                <div class="box-header">
+                  <div class="box-hd-main">
+                    <strong>MÀU SẮC</strong>
+                  </div>
+                  <div class="box-hd-decoration"><hr /></div>
+                </div>
+                <div class="box-content ">
+                  <div class="color-1 mr"><a href="#"></a></div>
+                  <div class="color-2 mr"><a href="#"></a></div>
+                  <div class="color-3 mr"><a href="#"></a></div>
+                  <div class="color-4 mr"><a href="#"></a></div>
+                  <div class="color-5 mr"><a href="#"></a></div>
+                  <div class="color-6"><a href="#"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lọc theo mức giá -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <div class="box-hd-main">
+                    <strong>MỨC GIÁ</strong>
+                  </div>
+                  <div class="box-hd-decoration"><hr /></div>
+                </div>
+                <div class="box-content">
+                  <div class="input-price">
+                    <div class="from">
+                      <input type="text" placeholder="0" />
+                    </div>
+                    <div class="end-price">
+                      -
+                    </div>
+                    <div class="to">
+                      <input type="text" placeholder="10000000" />
+                    </div>
+                  </div>
+                  <div class="btn-find-price">
+                    <a href="#">Lọc giá </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lọc theo size -->
+          <div class="row" id="filter-size">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <div class="box-hd-main">
+                    <strong>SIZE</strong>
+                  </div>
+                  <div class="box-hd-decoration"><hr /></div>
+                </div>
+                <div class="box-content">
+                  <ul>
+                    <li>
+                      <label class="checkbox-container"
+                        >7.75
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >7.8
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >7.9
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.0
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.125
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.25
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.35
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.5
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >9.0
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >9.5
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <aside id="right" class="products">
+          <!-- Dòng 1 -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Nomad/nomad-life-balance-panther-deck.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Life-balance-panther</strong>
+                  </div>
+                  <div class="cost"><p>750.000</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Nomad/nomad-nmd-2033-kick-deck.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>2033-kick</strong>
+                  </div>
+                  <p>750.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Nomad/nomad-nmd-2033-rider-deck.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Rider</strong>
+                  </div>
+                  <p>750.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Nomad/nomad-nmd-2033-vema-deck.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Vema</strong>
+                  </div>
+                  <p>750.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dòng 2 -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Nomad/nomad-psycho-players-club-deck.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Psycho-players</strong>
+                  </div>
+                  <div class="cost"><p>890.000</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Nomad/nomad-puff-puff-pass-deck.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Puff-pass</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Nomad/nomad-send-nudes-deck.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Send-nudes</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Nomad/nomad-since-2000-deck.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Since-2000</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dòng 3 -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Nomad/nomad-sober-in-the-morning-deck.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Sober-in-the-morning</strong>
+                  </div>
+                  <div class="cost"><p>890.000</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Nomad/nomad-sobriety-friends-deck.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Sobriety-friends</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Nomad/nomad-solitude-server-center-deck.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Solitude-server-center</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/BdSkateco/bdskateco-nature-rock-deck.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Nature-rock</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <!-- Dòng 4 -->
+          <div class="row">
+            <div class="col">
+              <div class="box"><a href="">1</a></div>
+            </div>
+            <div class="col">
+              <div class="box"><a href="">2</a></div>
+            </div>
+            <div class="col">
+              <div class="box"><a href="">3</a></div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <a href="">
+                  <i class="material-icons">
+                    keyboard_arrow_right
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </main>
+      <!-- Phần footer -->
+      <footer>
+        <div class="footer-container">
+          <!-- row 1 -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <strong>Feed your curiosity</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row 2 -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <form>
+                  <div class="box-content">
+                    <input type="email" placeholder="Email address" />
+                    <button type="submit"><strong>Submit</strong></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href=""> <i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <p>
+                    ​Trong vòng hai tuần, tôi sẽ không bao giờ spam
+                    <br />
+                    Cung cấp bởi <a href=""> Cao Văn Đức.</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <ul>
+                    <li><a href="">Case studies</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Posts</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Privacy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <p>© 2019‑NOW CLEARLEFT LTD. ALL RIGHTS RESERVED</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+    type="text/javascript"
+  ></script>
+  <script src="../../js/productCapitalize.js"></script>
+  </body>
+</html>

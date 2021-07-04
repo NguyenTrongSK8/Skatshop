@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.container {
+  background-color: #0e0e0e;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* button go back */
+#btn-goBack {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 50px;
+  border: unset;
+  transition: 1s;
+  font-size: 20px;
+}
+#btn-goBack:hover {
+  border: 1px solid palevioletred;
+}
+
+/* Form css */
+#myForm {
+  width: 900px;
+  height: 500px;
+  background-color: aquamarine;
+}
+
+.form-container {
+  background-image: url("./../sources/images/formbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  background-color: lightcoral;
+
+  height: 100%;
+  width: 100%;
+  box-shadow: 5px 6px 12px 11px black;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 100%;
+  height: 100%;
+}
+.item h1,
+.item h2 {
+  color: rgba(255, 255, 255, 0.836);
+  font-weight: 100;
+  font-size: 28px;
+}
+.item h2 {
+  font-size: 20px;
+}
+.item-header {
+  display: flex;
+  position: relative;
+}
+.item-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  background-color: violet;
+}
+
+.item-footer {
+  position: relative;
+  display: flex;
+}
+
+/* Left */
+#form-left {
+  display: flex;
+  width: 40%;
+  position: relative;
+  background-color: rgba(156, 36, 160, 0.068);
+}
+
+#circle {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-radius: 100%;
+
+  border: 8px solid #1e9a9a;
+}
+
+/* Right */
+#form-right {
+  position: relative;
+  box-shadow: -5px 0px rgba(72, 80, 24, 0.466);
+  display: flex;
+  width: 60%;
+  background-color: rgba(7, 28, 31, 0.473);
+}
+
+#form-right .item-content {
+  height: 60%;
+  justify-content: space-around;
+  background-color: unset;
+  align-items: center;
+}
+input[type="text"] {
+  background-color: rgba(0, 0, 0, 0.089);
+  color: rgba(255, 255, 255, 0.699);
+  border: none;
+  border-bottom: 2px solid #92ac1f;
+  padding: 15px 0px;
+  outline: unset;
+  font-size: 20px;
+  transition: 0.5s;
+}
+input[type="password"] {
+  background-color: rgba(0, 0, 0, 0.089);
+  color: rgba(255, 255, 255, 0.699);
+  border: none;
+  border-bottom: 2px solid #92ac1f;
+  padding: 15px 0px;
+  outline: unset;
+  font-size: 20px;
+  transition: 0.5s;
+}
+input[type="text"]:hover {
+  background-color: rgba(0, 0, 0, 0.438);
+}
+input[type="text"]:focus {
+  background-color: rgba(0, 0, 0, 0.438);
+}
+
+#notice {
+  color: red;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#submitt {
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.089);
+  border: unset;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.712);
+  font-weight: 100;
+  border: 1px solid #92ac1f;
+  height: 50px;
+  width: 150px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.089);
+  border: unset;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 100;
+  border: 1px solid #92ac1f;
+  height: 80px;
+  width: 150px;
+  transition: 0.5s;
+}
+#submitt:hover {
+  background-color: rgba(0, 0, 0, 0.438);
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+/* moblie responsive */
+@media only screen and (max-width: 576px) {
+  #btn-goBack {
+    font-size: 10px;
+  }
+  #myForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0e0e;
+    height: 50%;
+  }
+  .form-container {
+    width: 98%;
+    height: 75%;
+  }
+  #form-left h1 {
+    font-size: 10px;
+  }
+  #form-left h2 {
+    font-size: 10px;
+  }
+  #form-right h1 {
+    font-size: 10px;
+  }
+  input[type="text"] {
+    padding: 5px 0;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .item-header {
+    margin-bottom: 20px;
+  }
+  .item-content {
+    height: initial;
+  }
+  .item-content input:nth-child(3) {
+    margin-bottom: 0;
+  }
+  #submitt {
+    font-size: 10px;
+    height: initial;
+    width: initial;
+    padding: 5px;
+  }
+  /* button */
+  button {
+    width: initial;
+  }
+}
+/* width from 576px to 768px */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  #btn-goBack {
+    font-size: 10px;
+  }
+  #myForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0e0e;
+    height: 50%;
+  }
+  .form-container {
+    width: 98%;
+    height: 100%;
+  }
+  #form-left h1 {
+    font-size: 15px;
+  }
+  /* form left */
+  #form-left h2 {
+    font-size: 15px;
+  }
+  #form-left {
+    width: 45%;
+  }
+  /* form right */
+  #form-right {
+    width: 55%;
+  }
+  #form-right h1 {
+    font-size: 15px;
+  }
+  input[type="text"] {
+    padding: 5px 0;
+    font-size: 10px;
+  }
+
+  .item-header {
+    margin-bottom: 20px;
+  }
+  .item-content {
+    height: initial;
+    justify-content: space-evenly;
+  }
+  .item-content input:nth-child(3) {
+    margin-bottom: 0;
+  }
+  #submitt {
+    font-size: 15px;
+    padding: 5px 15px;
+    height: initial;
+    width: initial;
+  }
+  /* button */
+  button {
+    width: initial;
+  }
+}
+
+/* width from 768px to 992px */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #btn-goBack {
+    font-size: 20px;
+  }
+  #myForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0e0e;
+    height: 70%;
+  }
+  .form-container {
+    width: 98%;
+    height: 100%;
+  }
+  #form-left h1 {
+    font-size: 15px;
+  }
+  /* form left */
+  #form-left h2 {
+    font-size: 20px;
+  }
+  #form-left {
+    width: 45%;
+  }
+  /* form right */
+  #form-right {
+    width: 55%;
+  }
+  #form-right h1 {
+    font-size: 20px;
+  }
+  input[type="text"] {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+
+  .item-header {
+    margin-bottom: 20px;
+  }
+  .item-content {
+    height: initial;
+    justify-content: space-evenly;
+  }
+  .item-content input:nth-child(3) {
+    margin-bottom: 0;
+  }
+  #submitt {
+    font-size: 15px;
+    padding: 5px 15px;
+    height: initial;
+    width: initial;
+  }
+  /* button */
+  button {
+    width: initial;
+  }
+}

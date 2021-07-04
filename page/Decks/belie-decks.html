@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Belie-Decks</title>
+    <!-- style-this-page -->
+    <link rel="stylesheet" href="../../css/belie-decks.css" />
+
+    <link
+      rel="icon"
+      href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw4PDxASDxAQDw8NEA8QDw8QDw8PDw8PFREWFhUVFhMYHTQgGBomGxUVITIhJSktOi4uFyAzODUtNygtLisBCgoKDg0OGg8QFzcdHh03Ny4tNy4wMjArNy43MzczNzc3LS0tLS0uKy0rNys3NTUrLC8xLCsvMDcuNysrKzg3K//AABEIARMAtwMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABAECBgcIAwX/xABNEAABAwICBQQMCQgLAQAAAAAAAQIDBBEFEgYHITFBE1FhgRciMjVUcXKUsbPS0xRSVXN0kZKhwSVCU5OissLDFRY0Q0RiY4OktNEI/8QAGwEBAQACAwEAAAAAAAAAAAAAAAECBAUGBwP/xAAjEQEAAgICAgEFAQAAAAAAAAAAAQIDEQQxEiFRBhNBgeEF/9oADAMBAAIRAxEAPwDeIAAAAAAAAAAHhLUomxNq/cnWedTKu5N3FecjogHo6d68beJE/Et5V/xl+4pYrYD0ZUuTfZfuJEUyO6F5lIWUWA+kDxglvsXen3nsAAAAAAAAAAAAAAAAAAAA85n2T7j0I1S7aicwEexWxUIBSxUrYKgFosVUAGrZbk5q3QgkqmXZ4gPUAAAAAAAAAAAAAAAAAACJNtcpLIbt6+MC1EKgqBQFbCwFCioXFALVQ96bieRfB3QEoAAAAAAAAAAAAAAAAAACGpMUhrxAoXIWlQKgopQC5S0AAXxbywvi3gSgAAAAAAAAAAAAAAAAAAUhKu0mmu9clZNBhMr4JZIZEmp7PikfG+yyWVMzVuBm9wcjLpPiS/46t66uo9otXSXEfDqzzuo9oDrsqclLimLchy/wqt5DleR5X4VPl5XLny91e+XaRv6xYh4bV+dT+0F0682lLnJ1XimLQpGstVWsSeNs0V6qft4nKqNcnbbtikrCNPsXpXo6Otnemy8c73VEa9Fn3t1WBp1Pc9IN5gWrrWJDiqclI1IK1jczokW8crU3ujVdvjau7nVN2eQL2wRMAAAAAAAAAAAAAAAAAABTW2u9PyLP89TetQ2Sp8LSDBKevhfBVMWSF7mucxHvZdWuunbNVF3gcgBTpbsT4D4I7zqq9swLXDoXhuG0lPJRwrE+SoVj1WaaS7eSc61nuW21ECtS3AVDMdVGCU1fiTYKqPlYVgmerM72Xc1EttaqKFYhctU6Z7FWA+B/8iq9s5/0yoo6fEayGFuWKColjjbdXZWIuxLrtXrCbQMLr5aaaKeFyslge2SNycHIvFOKLuVOKKp1zo/iLaqCnqGbG1EUcqJzZmotuq9uo49Q6i1RPVcHoL/onp1JM9PwBLOgAEAAAAAAAAAAAAAAAACI7epLIjt6geamq/8A6E/sFJ9LX1LzainxtJ9GKPE42RVbXvZE/lGoyR0a5sqt3p0KoHJamwdRnfln0ep/dQ2d2H8D/RT+cyH1NHdX2GYdOk9LHK2VGuYiume9MrksuxQu2VHKWsPvviP0ub946tOZdPNH6+TFa98dFVvY+qlVj2U07mubfYqKjbKgSGGHUGp7vNQfNyevkOdU0YxPwCt80qPZOj9VFNJFhNEyVj4pGMkRzJGOY9q8u9drV2pvCyzcABAAAAAAAAAAAAAAAAAhv3kww3WZij6PCq2WNVbJySRscmxWule2NFRedM1+oDH9K9blBRSPhhY+tmjVWv5NzY4WOTe3lVRbr4mr+BjK69nfJrfPF90adUtC6bkTXq/5Ob54vuh2dX/JzfPF90adaVJMrpuJNecnyczzx3ui1der/k5vna+6NRNPJ28RJpuHs6SfJzfO3e6NqaE42uIUdPVLGkS1DXryaOzo3LI5vdWS/c8xyU06g1P95qD5uT18hUlnYACAAAAAAAAAAAAAAAABrvXV3kq/Lpf+xGbEMR1hYDLiOHz0sLmMkmWFWukVyMTJKx63yoq7mrwA5SUn4BhMldVQ00bmskqH5GufmyItlXbZL22cxnztSGLcJ6Ff92oT+UfX0M1T4lRYhS1MstG6KnlzvSOWZz1TKqbEWNE484Xb5nYPxLwmh+1U+7Lk1IYl4TRfaqPdm+rBUGjbQ3YRxHwmi+1Ue7Kdg/EfCqL66j2DfIGk20P2Da/jWUfUk6/wm39BcFfQUNNSyPbI+na9qvZfK68jnbL7dzkPsl0PdIDaaAAAAAAAAAAAAAAAAAAB8fG8SjpIJZ5O5ibeyb3Lua1OlVVE6z7Bg2tZrv6OfbcksSu8m9vTlMMlvGk2j8Nnh4a5uRTFbq0xEtW49pHVVr3LLIuRV7WFqqkTE4IjeK9K7SNheL1NK9HU8r41Rb2RVyO6HN3L1kEHBze0z5b9vUa8bFXH9qKR4/GvTeejWkyVlE+fKiSwNfy0e3Lna3Mip/lX/wB5jV0mvOrXuKGnb5UszvRY+9qva7ksS+LyDUvwzZZLfiaHZu6k9BzOC83xxaXm3+rxqcfl3xU6jr9xttCTXZia9zBRN8bJ3fzCFNrlxld3wVvk07l/ecpr1FLVPrDQ0zeXWtjr91UxnkU0Celqm9NWmIz1eGUc9Q9ZZpWSK96o1quXlnomxqIibEROo5WYdPaoO81B83J694SWdgAqAAAAAAAAAAAAAAAAB83E6OOojkilTNHK1WuToXinTxPpGMadY1Jh9BU1UbGPfTtY5GPzZHXe1u2y3/OUT7WtprO49TDVWkGhVbSvdljfUQ37SWJqv7Xhmam1q/dzEHDdF6+oejY6eRL73yMdHG1OdXOT0HuzXlXcaOl6nzJ+Jd2dKzjRU/62U0p4VN9uy1+p+TGPxmkTb5/jbGjujjKOjdA113ytdystu6kc210TmTZZDWTtQ7k3Yk1fHRqn80iLr1q/Aaf9bMZFoBrSqMTr46WSlhia9kr1ex8jnJkYq7lNytYrGoddy5b5bzkvO5nt8B+oyp/Nr4V8qCRvocpEn1HYkncVVE7ylqGeiNTfaoad0r1v1lFXVNMylpntppXRte9ZszkTiqI4rB8DsKYsn97Qr4pqj3JuTV/g8tDQUtNMrFlga9HLGquZtlc5LKqIu5ycDUXZvxFd1LRp40qHfxm39AsYlr6CmqZWsbJO16ubGjkYlpXNSyKqrubzgZSAAgAAAAAAAAAAAAAAAAYLreT8i1/zcfrozOjHdMcE/pCiqKXlOS+ENa3lMmfLZ6Ovlul93OByQ0o83J2CX/KTfM196Yvp/q2fhFNHO6qbUJJO2DIkCxKl43vzXzr8S1ukmmW2AoZ7qQ79w/M1PqlMCQzzUj37g+ZqfVKUl0kpyvrL784h9Jf6EOqFQ5W1l9+cQ+kv9CBIY6xTp/VD3moPIl9fIcvsOoNUKfkag8iX10hCWdAAqAAAAAAAAAAAAAAAABFk3kojP3geZhOuTC1qcGqMqXdTOjqUTjlYvb/sOevUZxYskYjkVrkRzXIrXIqXRUXeipzAcZH1dGMfnw2qbU06RrKxr2okrVeyz25VuiKnBecyTWTohJhT3MZCx1FPPytPV5XrNGmVU+DOfeyIm/anbWvfeiYMGTZPZrxj4lF+ol94YFjWJyVlTNUTZUlqHrI/IitZmXmRV2J1nnV1XKJGnJxR8lG2O8bMiyWVVzyLftnrfaviI4RVu/ZtXgnFV5jrfQnDFpKGip3JZ8MEbZE5pMt3/tK40pqb0GfVzsrahipSUz88KOS3widq9rbnY1dqrxVLc50JCm1AiUAAAAAAAAAAAAAAAAAABGk3kkjybwLAABHraKKeN8U0bJYpEs+N7UcxydKL9Zq3SDUhTSOV1DUOpv8ARlas8adCPvmRPHmNs7b8LcVut7+K34lQNApqOxLNZaqjRnxkWdXfZyfiZbozqXoadzX1krq17VukeXkqe/S1FVzutbdBs+PN22bLv7WyrfLZN6cFvfcXAWRRNY1rWI1rGIjWtaiNa1qbERETYidB6xJtLS+LeBIAAAAAAAAAAAAAAAAAAAjy71JBGm7oC0FLhFAqAAAAAF8W9Cy5fDvAkAAAAAAAAAAAAAAAAAAAR6ngSDzmbdPEBGuC0rcC4XKACtwUAA9qdN54kmFtk8e0D0AAAAAAAAAAAAAAAAAAAAAQ52WXoUsJzmoqWUiSQKm7an3gWAt3FbgVuVVS256Mhcu9LJ07/qArCy69CbyWWsbZLIXAAAAAAAAAAAAAAAAAAAAAAAAAUVEXftLFib8VPqQoAL2oibkRC4AAAAAAAAAAAAAAA//Z"
+    />
+    <!-- material-icons link -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+  </head>
+  <body id="belie-decks">
+    <div class="container" id="top">
+      <nav class="">
+        <ul>
+          <li>
+            <a href="../main.html"><p>HADES</p></a>
+          </li>
+          <li>
+            <a href="../image.html"><p>Hình ảnh</p></a>
+          </li>
+          <li>
+            <a href="../film.html"><p>Phim</p></a>
+          </li>
+          <li>
+            <a href="../contact.html"><p>Liên hệ</p></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- main -->
+      <main>
+        <!-- button go to top -->
+        <div class="btn-top">
+          <a href="#top"
+            ><i class="material-icons">
+              keyboard_arrow_up
+            </i></a
+          >
+        </div>
+
+        <aside id="left" class="filter">
+          <!-- Lọc theo màu -->
+
+          <div class="row">
+            <div class="col">
+              <div class="box ">
+                <div class="box-header">
+                  <div class="box-hd-main">
+                    <strong>MÀU SẮC</strong>
+                  </div>
+                  <div class="box-hd-decoration"><hr /></div>
+                </div>
+                <div class="box-content ">
+                  <div class="color-1 mr"><a href="#"></a></div>
+                  <div class="color-2 mr"><a href="#"></a></div>
+                  <div class="color-3 mr"><a href="#"></a></div>
+                  <div class="color-4 mr"><a href="#"></a></div>
+                  <div class="color-5 mr"><a href="#"></a></div>
+                  <div class="color-6"><a href="#"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lọc theo mức giá -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <div class="box-hd-main">
+                    <strong>MỨC GIÁ</strong>
+                  </div>
+                  <div class="box-hd-decoration"><hr /></div>
+                </div>
+                <div class="box-content">
+                  <div class="input-price">
+                    <div class="from">
+                      <input type="number" placeholder="0" />
+                    </div>
+                    <div class="end-price">
+                      -
+                    </div>
+                    <div class="to">
+                      <input type="number" placeholder="10000000" />
+                    </div>
+                  </div>
+                  <div class="btn-find-price">
+                    <a href="#">Lọc giá </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lọc theo size -->
+          <div class="row" id="filter-size">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <div class="box-hd-main">
+                    <strong>SIZE</strong>
+                  </div>
+                  <div class="box-hd-decoration"><hr /></div>
+                </div>
+                <div class="box-content">
+                  <ul>
+                    <li>
+                      <label class="checkbox-container"
+                        >7.75
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >7.8
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >7.9
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.0
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.125
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.25
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.35
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.5
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >9.0
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >9.5
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <aside id="right" class="products">
+          <!-- Dòng 1 -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Belier-Viet Nam/Black.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Black</strong>
+                  </div>
+                  <div class="cost"><p>890.000</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Belier-Viet Nam/Blue.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Blue</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Belier-Viet Nam/Báo.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Báo</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Belier-Viet Nam/dream.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Dream</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dòng 2 -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Belier-Viet Nam/Giếng nước - máy bơm.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Giếng nước</strong>
+                  </div>
+                  <div class="cost"><p>890.000</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Belier-Viet Nam/Pink.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Pink</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Belier-Viet Nam/rose.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Rose</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Belier-Viet Nam/Trống đồng.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Trống đồng</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dòng 3 -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Belier-Viet Nam/Tổ ong 2.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Tổ ong 2</strong>
+                  </div>
+                  <div class="cost"><p>890.000</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Belier-Viet Nam/Tổ ong.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Tổ ong</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Belier-Viet Nam/Ăn phở .jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Ăn phở</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Decks/Belier-Viet Nam/Đông Hồ.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Đông Hồ</strong>
+                  </div>
+                  <p>890.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dòng 4 -->
+          <div class="row">
+            <div class="col">
+              <div class="box"><a href="">1</a></div>
+            </div>
+            <div class="col">
+              <div class="box"><a href="">2</a></div>
+            </div>
+            <div class="col">
+              <div class="box"><a href="">3</a></div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <a href="">
+                  <i class="material-icons">
+                    keyboard_arrow_right
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </main>
+      <!-- Phần footer -->
+      <footer>
+        <div class="footer-container">
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <strong>Feed your curiosity</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <form>
+                  <div class="box-content">
+                    <input type="email" placeholder="Email address" />
+                    <button type="submit"><strong>Submit</strong></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href=""> <i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <p>
+                    ​Trong vòng hai tuần, tôi sẽ không bao giờ spam
+                    <br />
+                    Cung cấp bởi <a href=""> Cao Văn Đức.</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <ul>
+                    <li><a href="">Case studies</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Posts</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Privacy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <p>© 2019‑NOW CLEARLEFT LTD. ALL RIGHTS RESERVED</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="../../js/productCapitalize.js"></script>
+  </body>
+</html>

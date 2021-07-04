@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reds-Berrings</title>
+    <!-- style-this-page -->
+    <link rel="stylesheet" href="../../css/belie-decks.css" />
+    <link
+      rel="icon"
+      href="data:image/jpeg;base64,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"
+    />
+    <!-- material-icons link -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+  </head>
+  <body id="reds-berrings">
+    <div class="container" id="top">
+      <div class="overlay"></div>
+      <nav class="">
+        <ul>
+          <li>
+            <a href="../main.html"><p>HADES</p></a>
+          </li>
+          <li>
+            <a href="../image.html"><p>Hình ảnh</p></a>
+          </li>
+          <li>
+            <a href="../film.html"><p>Phim</p></a>
+          </li>
+          <li>
+            <a href="../contact.html"><p>Liên hệ</p></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- main -->
+      <main>
+        <!-- button go to top -->
+        <div class="btn-top">
+          <a href="#top"
+            ><i class="material-icons">
+              keyboard_arrow_up
+            </i></a
+          >
+        </div>
+
+        <aside id="left" class="filter">
+          <!-- Lọc theo màu -->
+
+          <div class="row">
+            <div class="col">
+              <div class="box ">
+                <div class="box-header">
+                  <div class="box-hd-main">
+                    <strong>MÀU SẮC</strong>
+                  </div>
+                  <div class="box-hd-decoration"><hr /></div>
+                </div>
+                <div class="box-content ">
+                  <div class="color-1 mr"><a href="#"></a></div>
+                  <div class="color-2 mr"><a href="#"></a></div>
+                  <div class="color-3 mr"><a href="#"></a></div>
+                  <div class="color-4 mr"><a href="#"></a></div>
+                  <div class="color-5 mr"><a href="#"></a></div>
+                  <div class="color-6"><a href="#"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lọc theo mức giá -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <div class="box-hd-main">
+                    <strong>MỨC GIÁ</strong>
+                  </div>
+                  <div class="box-hd-decoration"><hr /></div>
+                </div>
+                <div class="box-content">
+                  <div class="input-price">
+                    <div class="from">
+                      <input type="text" placeholder="0" />
+                    </div>
+                    <div class="end-price">
+                      -
+                    </div>
+                    <div class="to">
+                      <input type="text" placeholder="10000000" />
+                    </div>
+                  </div>
+                  <div class="btn-find-price">
+                    <a href="#">Lọc giá </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lọc theo size -->
+          <div class="row" id="filter-size">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <div class="box-hd-main">
+                    <strong>SIZE</strong>
+                  </div>
+                  <div class="box-hd-decoration"><hr /></div>
+                </div>
+                <div class="box-content">
+                  <ul>
+                    <li>
+                      <label class="checkbox-container"
+                        >7.75
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >7.8
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >7.9
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.0
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.125
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.25
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.35
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.5
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >9.0
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >9.5
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <aside id="right" class="products">
+          <!-- Dòng 1 -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Berrings/Reds/1BBOB0BIGR010BS.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Reds 01</strong>
+                  </div>
+                  <div class="cost"><p>650.000</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Berrings/Reds/1BBOB2CR0100000(6).jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Reds black </strong>
+                  </div>
+                  <p>650.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Berrings/Reds/1BBOB3RR0100000.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Reds Blue</strong>
+                  </div>
+                  <p>650.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Trucks/BdSkateco/img-9616.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>Mother of Trucks</strong>
+                  </div>
+                  <p>9.999.999</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dòng 4 -->
+          <div class="row"></div>
+        </aside>
+      </main>
+      <!-- Phần footer -->
+      <footer>
+        <div class="footer-container">
+          <!-- row 1 -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <strong>Feed your curiosity</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row 2 -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <form>
+                  <div class="box-content">
+                    <input type="email" placeholder="Email address" />
+                    <button type="submit"><strong>Submit</strong></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href=""> <i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <p>
+                    ​Trong vòng hai tuần, tôi sẽ không bao giờ spam
+                    <br />
+                    Cung cấp bởi <a href=""> Cao Văn Đức.</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <ul>
+                    <li><a href="">Case studies</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Posts</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Privacy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <p>© 2019‑NOW CLEARLEFT LTD. ALL RIGHTS RESERVED</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="../../js/productCapitalize.js"></script>
+  </body>
+</html>

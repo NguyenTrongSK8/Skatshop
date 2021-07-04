@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blank-Trucks</title>
+    <!-- style-this-page -->
+    <link rel="stylesheet" href="../../css/belie-decks.css" />
+    <link
+      rel="icon"
+      href="data:image/jpeg;base64,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"
+    />
+    <!-- material-icons link -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    /> <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+  </head>
+  <body id="blank-trucks">
+    <div class="container" id="top">
+      <div class="overlay"></div>
+      <nav class="">
+        <ul>
+          <li>
+            <a href="../main.html"><p>HADES</p></a>
+          </li>
+          <li>
+            <a href="../image.html"><p>Hình ảnh</p></a>
+          </li>
+          <li>
+            <a href="../film.html"><p>Phim</p></a>
+          </li>
+          <li>
+            <a href="../contact.html"><p>Liên hệ</p></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- main -->
+      <main>
+        <!-- button go to top -->
+        <div class="btn-top">
+          <a href="#top"
+            ><i class="material-icons">
+              keyboard_arrow_up
+            </i></a
+          >
+        </div>
+
+        <aside id="left" class="filter">
+          <!-- Lọc theo màu -->
+
+          <div class="row">
+            <div class="col">
+              <div class="box ">
+                <div class="box-header">
+                  <div class="box-hd-main">
+                    <strong>MÀU SẮC</strong>
+                  </div>
+                  <div class="box-hd-decoration"><hr /></div>
+                </div>
+                <div class="box-content ">
+                  <div class="color-1 mr"><a href="#"></a></div>
+                  <div class="color-2 mr"><a href="#"></a></div>
+                  <div class="color-3 mr"><a href="#"></a></div>
+                  <div class="color-4 mr"><a href="#"></a></div>
+                  <div class="color-5 mr"><a href="#"></a></div>
+                  <div class="color-6"><a href="#"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lọc theo mức giá -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <div class="box-hd-main">
+                    <strong>MỨC GIÁ</strong>
+                  </div>
+                  <div class="box-hd-decoration"><hr /></div>
+                </div>
+                <div class="box-content">
+                  <div class="input-price">
+                    <div class="from">
+                      <input type="text" placeholder="0" />
+                    </div>
+                    <div class="end-price">
+                      -
+                    </div>
+                    <div class="to">
+                      <input type="text" placeholder="10000000" />
+                    </div>
+                  </div>
+                  <div class="btn-find-price">
+                    <a href="#">Lọc giá </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lọc theo size -->
+          <div class="row" id="filter-size">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <div class="box-hd-main">
+                    <strong>SIZE</strong>
+                  </div>
+                  <div class="box-hd-decoration"><hr /></div>
+                </div>
+                <div class="box-content">
+                  <ul>
+                    <li>
+                      <label class="checkbox-container"
+                        >7.75
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >7.8
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >7.9
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.0
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.125
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.25
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.35
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >8.5
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >9.0
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox-container"
+                        >9.5
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <aside id="right" class="products">
+          <!-- Dòng 1 -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <a href="">
+                    <img
+                      src="../../sources/images/Trucks/Blank/blank-polish-light-trucks-5-25.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+
+                <div class="box-content">
+                  <div class="name-product">
+                    <strong>blank</strong>
+                  </div>
+                  <div class="cost"><p>750.000</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dòng 4 -->
+          <div class="row"></div>
+        </aside>
+      </main>
+      <!-- Phần footer -->
+      <footer>
+        <div class="footer-container">
+          <!-- row 1 -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-header">
+                  <strong>Feed your curiosity</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row 2 -->
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <form>
+                  <div class="box-content">
+                    <input type="email" placeholder="Email address" />
+                    <button type="submit"><strong>Submit</strong></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href=""> <i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <p>
+                    ​Trong vòng hai tuần, tôi sẽ không bao giờ spam
+                    <br />
+                    Cung cấp bởi <a href=""> Cao Văn Đức.</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <ul>
+                    <li><a href="">Case studies</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Posts</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Privacy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="box">
+                <div class="box-content">
+                  <p>© 2019‑NOW CLEARLEFT LTD. ALL RIGHTS RESERVED</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../../js/productCapitalize.js"></script>
+  </body>
+</html>
